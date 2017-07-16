@@ -1,2 +1,2 @@
-/config.ru
-/exports/*
+collect.sh
+exports/*.csv

@@ -1,0 +1,9 @@
+# Don't forget to remove '.example' and make this file executable
+# mv collect.sh.example collect.sh && chmod +x collect.sh
+
+ruby lib/jwl.rb \
+-a LOGIN:PASSWORD \                 # Your login and password to jira
+-j JIRA_URL \                       # Url to jira https://example.atlassian.net/
+-u USERNAME \                       # Worklogs author
+-p PROJECT \                        # Project id
+-i STARTDATE:ENDDATE                # Format YYYY-MM-DD:YYYY-MM-DD

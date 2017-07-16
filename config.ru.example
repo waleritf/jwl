@@ -1,6 +1,0 @@
-require_relative 'lib/jwl'
-
-client = JWL::Client.new('https://some.atlassian.net/', 'admin', 'passwd')
-worklogs = client.collect_worklogs 'some', 'admin', DateTime.parse('2017-07-07'), DateTime.now
-
-run Proc.new { |env| ['200', {'Content-Type' => 'text/html'}, [worklogs.to_s]] }
